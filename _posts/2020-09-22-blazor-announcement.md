@@ -63,7 +63,7 @@ public async Task<WeatherForecast[]> GetCurrentForecast()
 
 To make our application more resilient to server failures, we can retry the call with a short delay when the connection fails.
 
-Using PostSharp to automate the implementation of the retry pattern we create a custom aspect [`AutoRetryAttribute`](https://samples.postsharp.net/f/PostSharp.Samples.Blazor.AutoRetry/Services/WeatherService.cs.html) and apply it to all our service classes.
+Using PostSharp to automate the implementation of the retry pattern we create a custom aspect [`AutoRetryAttribute`](https://samples.postsharp.net/f/PostSharp.Samples.Blazor.AutoRetry/Aspects/AutoRetryAttribute.cs.html) and apply it to all our service classes.
 
 ```csharp
 [AutoRetry]
